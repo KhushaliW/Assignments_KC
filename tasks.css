@@ -1,0 +1,125 @@
+/* Date Selection Elements */
+.filter-card {
+    border-top-color: #f39c12 !important; /* Elegant Amber for filter accent */
+    margin-bottom: 30px;
+}
+
+.date-dropdown {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.date-dropdown:focus {
+    border-color: #2980b9;
+}
+
+/* Chronological Task Styling */
+.task-date-group {
+    border-top-color: #2ecc71 !important;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    position: relative;
+}
+
+.date-badge {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: #0f2027;
+    color: white;
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.task-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.task-item:last-of-type {
+    border-bottom: none;
+}
+
+.task-item h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.task-item p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Status Labels */
+.status {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.status.completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Resource Links Section */
+.resource-links {
+    margin-top: 20px;
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.resource-links h5 {
+    color: #475569;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.resource-links ul {
+    list-style: none;
+}
+
+.resource-links li {
+    margin-bottom: 8px;
+}
+
+.resource-links li:last-child {
+    margin-bottom: 0;
+}
+
+.file-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.file-link:hover {
+    color: #1a5276;
+    text-decoration: underline;
+}
