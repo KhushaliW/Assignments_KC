@@ -1,93 +1,150 @@
 <!doctype html>
-
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entertainment Categories</title>
+    <style>
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #f8fbff 0%, #eef3ff 100%);
+        color: #22304a;
+        padding: 24px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+        color: white;
+        padding: 32px 24px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+      }
+
+      .hero p {
+        margin: 0;
+        opacity: 0.95;
+      }
+
+      .table-wrap {
+        padding: 24px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+
+      th, td {
+        padding: 14px 12px;
+        text-align: left;
+        border-bottom: 1px solid #e8edf7;
+      }
+
+      th {
+        background: #f3f7ff;
+        color: #1d4ed8;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        font-size: 0.85rem;
+      }
+
+      tr:hover {
+        background: #f9fbff;
+      }
+
+      td a {
+        color: #1d4ed8;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      td a:hover {
+        text-decoration: underline;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: #eef4ff;
+        color: #1d4ed8;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+    </style>
   </head>
 
-  <body style="background-color:#f2f2f2; font-family:Arial;">
-    <br>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>Entertainment Categories</h1>
+        <p>Explore the most popular entertainment genres and discover your next favorite watch.</p>
+      </div>
 
-    <h1 align="center" style="color: darkblue">Entertainment Categories</h1>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+            <th>Description</th>
+            <th>Number of Categories</th>
+          </tr>
 
-    <hr>
+          <tr>
+            <td>1</td>
+            <td><a href="movies.html">Movies</a></td>
+            <td>Explore Action, Comedy, Horror, Romance, Thriller and many more movies.</td>
+            <td><span class="badge">500,000 – 600,000</span></td>
+          </tr>
 
-    <table
-      border="5"
-      align="center"
-      cellpadding="10"
-      width="100%"
-      style="border-collapse: collapse; background-color: white" 
-    >
-      <tr style="background-color: skyblue">
-        <th>ID</th>
-        <th>Category Name</th>
-        <th>Description</th>
-        <th>Number of Categories</th>
-      </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="anime.html">Anime</a></td>
+            <td>Watch Japanese anime including Action, Fantasy, Adventure and Drama.</td>
+            <td><span class="badge">20,000 – 45,000</span></td>
+          </tr>
 
-      <tr align="center">
-        <td>1</td>
+          <tr>
+            <td>3</td>
+            <td><a href="webseries.html">Web Series</a></td>
+            <td>Popular web series from Netflix, Amazon Prime, Disney+ and more.</td>
+            <td><span class="badge">Hundreds of thousands+</span></td>
+          </tr>
 
-        <td><a href="movies.html"> Movies </a></td>
+          <tr>
+            <td>4</td>
+            <td><a href="cartoons.html">Cartoons</a></td>
+            <td>Enjoy animated cartoons for kids and adults from around the world.</td>
+            <td><span class="badge">10,000 – 45,000+</span></td>
+          </tr>
 
-        <td>
-          Explore Action, Comedy, Horror, Romance, Thriller and many more
-          movies.
-        </td>
-        <td>between 500,000 and 600,000</td>
-      </tr>
-
-
-      <tr align="center">
-        <td>2</td>
-
-
-
-        <td><a href="anime.html">Anime</a></td>
-
-        <td>
-          Watch Japanese anime including Action, Fantasy, Adventure and Drama.
-        </td>
-        <td>20,000 to 45,000</td>
-      </tr>
-
-      <tr align="center">
-        <td>3</td>
-
-
-
-        <td><a href="webseries.html">Web Series</a></td>
-
-        <td>
-          Popular web series from Netflix, Amazon Prime, Disney+ and more.
-        </td>
-        <td>hundreds of thousands to tens of millions</td>
-      </tr>
-
-      <tr align="center">
-        <td>4</td>
-
-        <td><a href="cartoons.html">Cartoons</a></td>
-
-        <td>
-          Enjoy animated cartoons for kids and adults from around the world.
-        </td>
-        <td>10,000 to over 45,000</td>
-      </tr>
-
-      <tr align="center">
-        <td>5</td>
-
-
-        <td><a href="documentaries.html">Documentaries</a></td>
-
-        <td>
-          Learn about history, science, wildlife, technology and real-life
-          stories.
-        </td>
-        <td>100,000 to 500,000</td>
-      </tr>
-    </table>
+          <tr>
+            <td>5</td>
+            <td><a href="documentaries.html">Documentaries</a></td>
+            <td>Learn about history, science, wildlife, technology and real-life stories.</td>
+            <td><span class="badge">100,000 – 500,000</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>

@@ -2,30 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us - Paradise Resort</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Paradise Resort</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>About Paradise Resort</h1>
-        <nav>
-            <a href="home.html">Home</a> | 
-            <a href="about.html">About</a> | 
-            <a href="booking.html">Booking</a> | 
+    <header class="hero small-hero">
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About</a>
+            <a href="booking.html">Booking</a>
             <a href="display.html">Display Bookings</a>
         </nav>
+
+        <div class="hero-content">
+            <p class="eyebrow">About our retreat</p>
+            <h1>Where timeless luxury meets warm island hospitality</h1>
+            <p>Paradise Resort offers a refined waterfront escape designed for relaxation, romance, and memorable stays.</p>
+        </div>
     </header>
-    <hr>
-    
-    <main>
-        <!-- Requirement: display about resort or contact info -->
-        <h2>Our Story</h2>
-        <p>Founded in 2010, Paradise Resort has been the premier getaway destination for travelers looking for tranquility, elegance, and unparalleled hospitality.</p>
-        
-        <h2>Contact Information</h2>
-        <p><strong>Address:</strong> 123 Ocean Breeze Avenue, Beachside Paradise</p>
-        <p><strong>Phone:</strong> +1 (555) 019-2834</p>
-        <p><strong>Email:</strong> contact@paradiseresort.com</p>
+
+    <main class="page-shell">
+        <section class="showcase-grid">
+            <article class="card large-card featured-card">
+                <div class="card-badge">Our story</div>
+                <h2>Where every stay feels personal</h2>
+                <p>Founded in 2010, Paradise Resort has become the preferred destination for travelers seeking serenity, elegance, and exceptional service. Our team blends modern comfort with the calm of a private waterfront retreat, offering a stay that feels both luxurious and personal.</p>
+                <div class="pill-group">
+                    <span>Garden views</span>
+                    <span>World-class service</span>
+                    <span>Private waterfront</span>
+                </div>
+            </article>
+
+            <article class="card side-card">
+                <h3>Contact information</h3>
+                <p><strong>Address:</strong> 123 Ocean Breeze Avenue, Beachside Paradise</p>
+                <p><strong>Phone:</strong> +1 (555) 019-2834</p>
+                <p><strong>Email:</strong> contact@paradiseresort.com</p>
+                <a class="btn btn-primary small-btn" href="booking.html">Plan your stay</a>
+            </article>
+        </section>
+
+        <section class="info-cards">
+            <div class="mini-card">
+                <h3>Relaxation first</h3>
+                <p>Every suite is designed to balance comfort, style, and peaceful surroundings.</p>
+            </div>
+            <div class="mini-card">
+                <h3>Memorable service</h3>
+                <p>From the front desk to the spa, our team creates a seamless guest experience.</p>
+            </div>
+            <div class="mini-card">
+                <h3>Unmatched views</h3>
+                <p>Enjoy sunrise mornings and evening sunsets over the water from the resort.</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>

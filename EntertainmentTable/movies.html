@@ -1,134 +1,130 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <title>Movies</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Collection</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fbff 0%, #eef3ff 100%);
+            color: #22304a;
+            padding: 24px;
+        }
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+            overflow: hidden;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+        .hero h1 { margin: 0 0 8px; font-size: 2rem; }
+        .hero p { margin: 0; opacity: 0.95; }
+        .toolbar { padding: 18px 24px 0; }
+        button {
+            background: linear-gradient(135deg, #ff8c00, #ff5e3a);
+            color: #fff;
+            border: none;
+            border-radius: 999px;
+            padding: 10px 18px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .table-wrap { padding: 24px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: center; border-bottom: 1px solid #e8edf7; }
+        th { background: #f3f7ff; color: #1d4ed8; text-transform: uppercase; letter-spacing: 0.04em; }
+        tr:hover { background: #f9fbff; }
+        img { width: 100px; height: 140px; object-fit: cover; border-radius: 10px; box-shadow: 0 6px 16px rgba(0,0,0,0.12); }
+        marquee { background: #fff5e6; color: #9a4d00; padding: 10px 12px; border-radius: 10px; margin: 16px 24px 0; font-weight: 600; }
+    </style>
 </head>
-
-<body style="background-color:#f2f2f2; font-family:Arial;">
-
-    <br>
-   
-    <marquee behavior="scroll" direction="left" style="color:red; font-size:20px;">
-        🚨Welcome to the Movies Collection! Click on the movie posters to know more.🚨
-    </marquee>
-    <br>
-
- <hr>
- <a href="index.html">
-        <button style="padding: 10px 25px; font-size: 18px">
-          ← Back to Categories
-        </button>
-      </a>
-    <h1 align="center" style="color:darkblue;">Movies Collection</h1>
-
-    <hr>
-
-    <table border="3" align="center" width="100%" style="border-collapse:collapse; background-color:white;">
-
-        <tr style="background-color:skyblue;">
-            <th>ID</th>
-            <th>Movie Poster</th>
-            <th>Movie Name</th>
-            <th>Genre</th>
-            <th>Language</th>
-            <th>Release Year</th>
-            <th>IMDb Rating</th>
-        </tr>
-
-        <tr align="center">
-            <td>1</td>
-            <td>
-                <a href="movie-details.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>Avengers: Endgame</td>
-            <td>Action / Sci-Fi</td>
-            <td>English</td>
-            <td>2019</td>
-            <td>8.4</td>
-        </tr>
-
-        <tr align="center">
-            <td>2</td>
-            <td>
-                <a href="avatar-details.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>Avatar</td>
-            <td>Action / Adventure</td>
-            <td>English</td>
-            <td>2009</td>
-            <td>7.9</td>
-        </tr>
-
-        <tr align="center">
-            <td>3</td>
-            <td>
-                <a href="interstellar-details.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>Interstellar</td>
-            <td>Sci-Fi / Drama</td>
-            <td>English</td>
-            <td>2014</td>
-            <td>8.7</td>
-        </tr>
-
-        <tr align="center">
-            <td>4</td>
-            <td>
-                <a href="spiderman-details.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>Spider-Man: No Way Home</td>
-            <td>Action / Adventure</td>
-            <td>English</td>
-            <td>2021</td>
-            <td>8.2</td>
-        </tr>
-
-        <tr align="center">
-            <td>5</td>
-            <td>
-                <a href="kgf-details.html">
-                    <img src="https://www.tamilnow.com/movies/gallery/kgf-chapter-2/latest-wallpaper-kgf-chapter-2-movie-9667.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>KGF Chapter 2</td>
-            <td>Action</td>
-            <td>Kannada</td>
-            <td>2022</td>
-            <td>8.3</td>
-        </tr>
-
-        <tr align="center">
-            <td>6</td>
-            <td>
-                <a href="rrr-details.html">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg"
-                    width="100" height="140">
-                </a>
-            </td>
-            <td>RRR</td>
-            <td>Action / Drama</td>
-            <td>Telugu</td>
-            <td>2022</td>
-            <td>7.8</td>
-        </tr>
-
-    </table>
-
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Movies Collection</h1>
+            <p>Discover a curated lineup of blockbuster hits and cinematic favorites.</p>
+        </div>
+        <marquee behavior="scroll" direction="left">🚨 Welcome to the Movies Collection! Click on the movie posters to know more. 🚨</marquee>
+        <div class="toolbar">
+            <a href="index.html"><button>← Back to Categories</button></a>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Movie Poster</th>
+                    <th>Movie Name</th>
+                    <th>Genre</th>
+                    <th>Language</th>
+                    <th>Release Year</th>
+                    <th>IMDb Rating</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="movie-details.html"><img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" alt="Avengers Endgame"></a></td>
+                    <td>Avengers: Endgame</td>
+                    <td>Action / Sci-Fi</td>
+                    <td>English</td>
+                    <td>2019</td>
+                    <td>8.4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="avatar-details.html"><img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Avatar_%282009_film%29_poster.jpg" alt="Avatar"></a></td>
+                    <td>Avatar</td>
+                    <td>Action / Adventure</td>
+                    <td>English</td>
+                    <td>2009</td>
+                    <td>7.9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="interstellar-details.html"><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg" alt="Interstellar"></a></td>
+                    <td>Interstellar</td>
+                    <td>Sci-Fi / Drama</td>
+                    <td>English</td>
+                    <td>2014</td>
+                    <td>8.7</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="spiderman-details.html"><img src="https://upload.wikimedia.org/wikipedia/en/0/00/Spider-Man_No_Way_Home_poster.jpg" alt="Spider-Man No Way Home"></a></td>
+                    <td>Spider-Man: No Way Home</td>
+                    <td>Action / Adventure</td>
+                    <td>English</td>
+                    <td>2021</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="kgf-details.html"><img src="https://www.tamilnow.com/movies/gallery/kgf-chapter-2/latest-wallpaper-kgf-chapter-2-movie-9667.jpg" alt="KGF Chapter 2"></a></td>
+                    <td>KGF Chapter 2</td>
+                    <td>Action</td>
+                    <td>Kannada</td>
+                    <td>2022</td>
+                    <td>8.3</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="rrr-details.html"><img src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg" alt="RRR"></a></td>
+                    <td>RRR</td>
+                    <td>Action / Drama</td>
+                    <td>Telugu</td>
+                    <td>2022</td>
+                    <td>7.8</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
-
 </html>
