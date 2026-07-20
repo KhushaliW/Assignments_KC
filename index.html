@@ -3,56 +3,78 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home | My HW Dashboard</title>
+    <title>Home | HW Dashboard</title>
     <meta name="description" content="Personal Academy Task Tracker">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <span class="logo">My HW Tracker</span>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="taskshw.html">Daily HW</a>
-                <a href="tasks.html">Daily Tasks</a>
-                <a href="#websites">Websites</a>
+    <div class="page-shell">
+        <nav class="navbar">
+            <div class="nav-container">
+                <span class="logo">My HW Tracker</span>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="taskshw.html">Daily HW</a>
+                    <a href="tasks.html">Daily Tasks</a>
+                    <a href="websites.html">Academy Links</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="main-container">
-        <header class="hero-section">
-            <h1>Welcome to Your Academy Dashboard</h1>
-            <p>Track your homework, daily tasks, and essential academy resources in one clean place.</p>
-        </header>
+        <main class="main-container">
+            <header class="hero-section">
+                <div class="hero-badge">Study planner • Academy workspace</div>
+                <h1>Welcome to My academy dashboard</h1>
+                <p>Track homework, class tasks, and learning resources in one clean and motivating place.</p>
+                <div class="hero-actions">
+                    <a href="taskshw.html" class="btn btn-primary">View Homework</a>
+                    <a href="tasks.html" class="btn btn-secondary">View Tasks</a>
+                </div>
+            </header>
 
-        <section class="dashboard-grid">
-            <div class="card homework-card">
-                <h3>Homework</h3>
-                <p>Date-wise list of assignments given in the lectures.</p>
-                <a href="taskshw.html" class="btn btn-blue">View Homework</a>
-            </div>
+            <section class="overview-grid">
+                <div class="info-panel">
+                    <div class="info-item">
+                        <strong>6+</strong>
+                        <span>Weekly topics</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>100%</strong>
+                        <span>Organized</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>24/7</strong>
+                        <span>Access</span>
+                    </div>
+                </div>
+            </section>
 
-            <div class="card task-card">
-                <h3>Class Tasks</h3>
-                <p>Date-wise list of practical codes and assignments done during lectures.</p>
-                <a href="tasks.html" class="btn btn-green">View Tasks</a>
-            </div>
+            <section class="dashboard-grid">
+                <div class="feature-card homework-card">
+                    <h3>Homework</h3>
+                    <p>Keep track of lectures, assignments, and the dates they were given.</p>
+                    <a href="taskshw.html" class="btn btn-blue">View Homework</a>
+                </div>
 
-            <!-- <div class="card website-card">
-                <h3>Academy Links</h3>
-                <p>Quick access to Kiran Academy portals and reference materials.</p>
-                <a href="#" class="btn btn-dark">Explore Links</a>
-            </div> -->
-        </section>
-    </main>
+                <div class="feature-card accent-green">
+                    <h3>Class Tasks</h3>
+                    <p>Review practical exercise pages and classwork completed during sessions.</p>
+                    <a href="tasks.html" class="btn btn-green">View Tasks</a>
+                </div>
 
-    <footer class="footer">
-        <p>&copy; 2026 Personal Academy Dashboard | Khushali Wagh</p>
-    </footer>
+                <div class="feature-card accent-orange">
+                    <h3>Academy Links</h3>
+                    <p>Open your learning resources and useful academy links from one place.</p>
+                    <a href="websites.html" class="btn btn-dark">Explore Links</a>
+                </div>
+            </section>
+        </main>
 
+        <footer class="footer">
+            <p>&copy; 2026 Personal Academy Dashboard | Khushali Wagh</p>
+        </footer>
+    </div>
 </body>
 </html>
