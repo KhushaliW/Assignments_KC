@@ -32,11 +32,11 @@ e=2+3j
 
 print("TASK 2: Find data type")
 print()
-print("Data type of a:",type(a))
-print("Data type of b:",type(b))
-print("Data type of c:",type(c))
-print("Data type of d:",type(d))
-print("Data type of e:",type(e))
+print("Data type of a (",a,"):",type(a))
+print("Data type of b (",b,"):",type(b))
+print("Data type of c (",c,"):",type(c))
+print("Data type of d (",d,"):",type(d))
+print("Data type of e (",e,"):",type(e))
 print()
 
 # Task 3: Memory Dectective
@@ -46,7 +46,7 @@ v3=100
 
 print("TASK 3: Memory Dectective")
 print()
-print("Memory address of v1:",id(v1))
-print("Memory address of v2:",id(v2))
-print("Memory address of v3:",id(v3))
+print("Memory address of v1 (",v1,"):",id(v1))
+print("Memory address of v2 (",v2,"):",id(v2))
+print("Memory address of v3 (",v3,"):",id(v3))
 print()
